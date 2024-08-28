@@ -1,0 +1,59 @@
+{
+  "name": "react-tooltipify",
+  "private": true,
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmg8431/react-tooltipify.git"
+  },
+  "author": "Mingi Choe <cmg8431@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/react-tooltipify.js",
+  "umd:main": "dist/react-tooltipify.umd.js",
+  "module": "dist/react-tooltipify.esm.mjs",
+  "unpkg": "dist/react-tooltipify.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rimraf dist && microbundle watch --jsx React.createElement --no-compress",
+    "build": "rimraf dist && microbundle --jsx React.createElement --jsxFragment React.Fragment"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/react-tooltipify.js",
+      "import": "./dist/react-tooltipify.esm.mjs",
+      "umd": "./dist/react-tooltipify.umd.js"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.1.2",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1"
+  }
+}
